@@ -41,7 +41,7 @@ class NoteAdapter(
         holder.delete.setOnClickListener {
             AlertDialog.Builder(context)
                 .setTitle("Delete Note!")
-                .setMessage("Are you sure to delete ${currentNote.id}")
+                .setMessage("Are you sure to delete ${currentNote.title}")
                 .setCancelable(true)
                 .setPositiveButton("Yes"){_, _ ->
                     databaseHelper = DatabaseHelper(context)
